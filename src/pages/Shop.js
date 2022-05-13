@@ -25,6 +25,10 @@ const Shop = () => {
   return (
     <div>
       <h1>Esta es mi tienda</h1>
+      <input type="checkbox" name="" id="" />
+      <input type="text" />
+      <button>Search</button>
+      <hr />
       <button onClick={() => setCurrentCategory('')}>
         All Products
       </button>
