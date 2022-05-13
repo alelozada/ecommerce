@@ -15,11 +15,16 @@ export const loginUser = async (data) => {
 
 export const createNewUser = async (data) => {
   const request = await axios.post(`${URL}/users/`, data)
-  return request
+  return request.data
 }
 
 export const getProducts = async () => {
   const request = await axios.get(`${URL}/products/`, getConfig())
+  return request.data
+}
+
+export const getProductsByName = async (data) => {
+  const request = await axios.get(`${URL}/products/?name__icontains=${data}`, getConfig())
   return request.data
 }
 

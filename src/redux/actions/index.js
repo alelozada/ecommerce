@@ -28,7 +28,7 @@ export const setProductsToCart = (data) => ({
   payload: data
 })
 
-export const setProductThunk = (category, id) => {
+export const setProductThunk = (category) => {
   return dispatch => {
     if (category) {
       getFilterProduct(category)

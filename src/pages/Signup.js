@@ -22,10 +22,6 @@ const Signup = () => {
           console.log('this is the info',response)
           setUserObj({})
           navigate('/login')
-          // localStorage.setItem("token", response.access)
-        })
-        .then(() => {
-          // navigate('/shop')
         })
     }
   }, [userObj, navigate])
@@ -58,7 +54,6 @@ const Signup = () => {
         </p>
       </div>
     </div>
-    
   )
 }
 
